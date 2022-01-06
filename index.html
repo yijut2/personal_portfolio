@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Yi-Ju Tsai
+EMAIL: yijut2@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Yi-Ju Tsai">
+  <meta name="description" content="description of your page">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- you would link to an external stylesheet here! -->
+   <!-- you would also link to Bootstrap here! -->
+  <title>Ruby's UI</title>
+
+<style>
+    html {
+	    height: 100%;
+	    font-size: 20px;
+    }
+    
+
+    body {
+        background: linear-gradient(90deg, #fcf2eb 31%, #fee2cc 0%);
+        /* border: 15px solid #fee2cc; */
+        /* padding: 50px; */
+        margin: 20px;
+        width: 100%;
+        background-image: url('/Users/rubytsai/Desktop/Ruby_web/solar2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    a {text-decoration: none;}
+    
+    a.linkedin:hover {
+  	    color: #0077b5 !important;
+    }
+
+    a.fb:hover {
+  	    color: #1778f2 !important;
+    }
+
+    a.ins:hover {
+  	    color: #E1306C !important;
+    }
+
+    .fav {
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 1rem; 
+        font-style: normal; 
+        font-variant: normal;
+        text-align: left;
+    }
+
+    
+
+    h1 {
+        color: black;
+        text-align: left;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 3rem; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: bold; 
+        line-height: 80px; 
+	    margin-left: 50px;
+    } 
+
+    h2 {
+        color: black;
+        text-align: left;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 1.2rem; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: normal; 
+        line-height: 30px;
+	    margin-left: 60px;
+    }
+
+    
+    h3 {
+        color: black;
+        text-align: left;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 1.3rem; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: bold; 
+        line-height: 30px;
+	    margin-left: 60px;
+	    text-decoration: underline;
+    }
+
+    
+	
+    p {
+	    color: black;
+        text-align: left;
+	    font-family: "Lucida Sans", Trebuchet MS, Arial, sans-serif;
+        font-size: 1.2rem; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: normal; 
+        line-height: 30px;
+	margin-left: 60px;
+    }
+	
+    #left
+	{
+	    color: white;
+        text-align: left;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 1.8rem; 
+        margin: 10px 0;
+        height :50%;
+        width:25%;
+        float:left;
+    }
+    #right
+	{
+	    color: black;
+        text-align: left;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 1.5rem; 
+        margin: 30px 0;
+        height:50%;
+        width:65%;
+        float:right;
+    }
+	
+
+    
+    .myphoto{
+        overflow: hidden;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        position: relative;
+        margin-top: 40px;	
+        margin-left: 40px;
+        margin-right: 40px;
+  }
+  
+    .myphoto>img{
+        width: 120%;
+        position: absolute;
+        left: -10%;
+  }
+
+
+    .footer {
+	    text-align: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 55px;
+        background-color: #fee2cc;
+        z-index: 9999;
+	    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        
+    }
+
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .intro {
+        width: 600px;
+        height: 1000px;
+       }
+    
+    .intro{
+        background: linear-gradient(90deg, #fcf2eb 31%, #fee2cc 0%);
+        border: 15px solid #fee2cc;
+        padding: 20px;
+        margin-top: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 10px;
+        /* height: 660px; */
+    }
+}
+
+.intro{
+ 	background: linear-gradient(90deg, #fcf2eb 31%, #fee2cc 0%);
+  	border: 15px solid #fee2cc;
+  	padding: 20px;
+	margin-top: 40px;
+  	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 10px;
+    height: 660px;
+    }
+    header {
+        position:relative;
+        top:0;
+    	left:0;
+        width:100%;
+        padding: 5px 0 10px;
+        overflow:auto; zoom: 1;
+
+        color: white;
+        background-color: black;
+    	opacity: 0.5;
+        text-align: center;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-size: 80px;
+        font-style: normal;
+        font-weight: normal; 
+    }
+
+
+    #nav {
+        text-align:center;
+}
+
+    #nav li {
+        display:inline;
+}
+
+   #nav li a:hover, #nav li a:focus {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.15);
+}
+
+   #nav li a {
+        padding: 15px 45px;
+        font-weight: bold;
+        color: white;
+        color: rgba(255, 255, 255, 1);
+        background: rgb(131, 103, 87);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+    Margin-top: 100px;
+}
+
+
+
+</style>
+
+
+<script>
+        (function(){
+            var calc = function(){
+                var docElement = document.documentElement;
+                var clientWidthValue = docElement.clientWidth > 750 ? 750 : docElement.clientWidth;
+                docElement.style.fontSize = 10*(clientWidthValue/375) + 'px';
+            }
+            calc();
+            window.addEventListener('resize',calc);
+        })();
+</script>
+
+
+
+
+</head>
+
+
+<body>
+
+    
+    <div id="header">  
+        <ul id="nav">
+        <li><a href="/Users/rubytsai/Desktop/Ruby_web/yiju_resume.pdf">RESUME</a></li>
+        <li><a href="/Users/rubytsai/Desktop/Ruby_web/yiju_cv.pdf">CV</a></li>
+        <li><a href="/Users/rubytsai/Desktop/Ruby_web/contact.html">CONTACT</a></li>  
+        </ul> 
+    </div>
+
+    <div class="intro">
+        <div id="right">
+            <h3> ABOUT </h3>
+            <p> Hi👋🏻, I am Ruby, a 4th year Computer Science students at UC Irvine. Due to my interest in design, I also minor in informatics. 
+            I specialize in intelligent system and the relevant courses I took were ML, AI, system design and networks..., etc. 
+            Currently looking for an internship and also planning to apply for the graduate school.
+            Feel free to contact me anytime if you have any questions.
+            <br> 
+            <br>
+            # Creative 🔑
+            <br>
+            # Passionate 💬
+            <br>
+            # Self-motivated 🧠
+            <br>
+            <br>
+            What else? Favorite ___ ?
+            <br>
+            <br>
+            >>> Let's have a talk!!!
+            <!-- <br>
+            <br>
+            # <strong>Topic</strong> : Algorithms, AI
+            <br>
+            # <strong>Drama</strong> : Hospital Playlist
+            <br>
+            # <strong>Game</strong> : Super Bunny Man
+            <br>
+            # <strong>Food</strong> : Hotpot -->
+	        </p>     
+	</div>
+
+
+
+	<div class="myphoto">
+		<img src="/Users/rubytsai/Desktop/Ruby_web/IMG_4403.jpeg" alt="Ruby's photo">
+    
+        </div> 
+    <br>
+	<div id="left"> 
+    		<h1>Yi-Ju Tsai</h1>
+		<h2>Computer Science / Design</h2>
+    	</div>
+	
+    </div>
+
+
+    <div class="footer">
+
+<a class="linkedin" href="https://www.linkedin.com/in/ruby-tsai2000/" target="_blank" style="color: black"> Linkedin <span class="fa fa-linkedin-square" style="font-size:45px; color:black"></span></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="fb" href="https://www.facebook.com/2000o4o7/" target="_blank" style="color: black"> FB <span class="fa fa-facebook" style="font-size:45px; color:black;"></span> </a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="ins" href="https://www.instagram.com/soooooone_9/" target="_blank" style="color: black"> INS <span class="fa fa-instagram" style="font-size:45px; color:black;"></span> </a>
+
+
+    </div>
+
+</body>
+</html>

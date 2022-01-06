@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Yi-Ju Tsai
+EMAIL: yijut2@uci.edu
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Yi-Ju Tsai">
+  <meta name="description" content="description of your page">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- you would link to an external stylesheet here! -->
+   <!-- you would also link to Bootstrap here! -->
+  <title>Contact Ruby</title>
+
+<style>
+    html {
+	height: 100%;
+	font-size: 20px;
+    }
+
+    body {
+            background-image: url('/Users/rubytsai/Desktop/Ruby_web/solar2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+    }
+
+    .intro{
+ 	background-image: linear-gradient( 179.3deg, rgba(110,177,253,1) -3.7%, rgba(254,215,144,1) 106.1% );
+  	padding: 20px;
+	margin-top: 140px;
+  	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 10px;
+    	height: 650px;
+    }
+
+body {font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+
+* {box-sizing: border-box;}
+
+
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+body {
+  display:flex;
+}
+form {
+  margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+}
+
+h1 {
+margin-left: 80px;
+Margin-top: 150px;
+color: white;
+}
+
+
+
+
+input[type=text], select, textarea {
+Font-size: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+    .footer {
+	text-align: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 55px;
+        background-color: #fee2cc;
+        z-index: 9999;
+    }
+
+
+  a {text-decoration: none;}
+  
+  a.linkedin:hover {
+  color: #0077b5 !important;
+  }
+
+  a.fb:hover {
+  color: #1778f2 !important;
+  }
+
+  a.ins:hover {
+  color: #E1306C !important;
+  }
+
+ 
+    #nav {
+      text-align:left;
+    }
+
+    #nav li {
+      display:inline;
+    }
+
+   #nav li a:hover, #nav li a:focus {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+   #nav li a {
+      /* padding: 15px 45px; */
+      font-weight: bold;
+      color: white;
+      color: rgba(255, 255, 255, 1);
+      background: rgb(131, 103, 87);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+    Margin-top: 100px;
+}
+    
+
+
+
+</style>
+</head>
+<body>
+
+    <div id="header">  
+      <ul id="nav">
+      <li><a href="/Users/rubytsai/Desktop/Ruby_web/index.html">HOME</a></li>
+      <li><a href="/Users/rubytsai/Desktop/Ruby_web/yiju_resume.pdf">RESUME</a></li>
+      <li><a href="/Users/rubytsai/Desktop/Ruby_web/yiju_cv.pdf">CV</a></li>
+      </ul> 
+    </div>
+
+<h1> Feel Free to Send Me A Message! </h1>
+
+
+
+<div class="intro">
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fullname">Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+
+    <label for="ead">Email Address</label>
+    <input type="text" id="ead" name="Email address" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject">
+      <option value="School work">School work</option>
+      <option value="Jobs">Jobs</option>
+      <option value="chat">Chat</option>
+    </select>
+
+    <label for="msg">Message</label>
+    <textarea id="msg" name="msg" placeholder="Send me a private message" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+
+  </form>
+
+  
+</div>
+</div>
+
+<div class="footer">
+
+<a class="linkedin" href="https://www.linkedin.com/in/ruby-tsai2000/" target="_blank" style="color: black"> Linkedin <span class="fa fa-linkedin-square" style="font-size:45px; color:black"></span></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="fb" href="https://www.facebook.com/2000o4o7/" target="_blank" style="color: black"> FB <span class="fa fa-facebook" style="font-size:45px; color:black;"></span> </a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="ins" href="https://www.instagram.com/soooooone_9/" target="_blank" style="color: black"> INS <span class="fa fa-instagram" style="font-size:45px; color:black;"></span> </a>
+</div>
+
+</body>
+</html>
